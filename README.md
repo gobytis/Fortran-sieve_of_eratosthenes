@@ -6,17 +6,19 @@ This is a Fortran class to apply sieve of Eratosthenes.
 
 ## Usage
 
-A following command shows prime numbers in the range of [0, 10]  and the number of output prime numbers.
+A following command shows prime numbers in the range of [0, `upper_limit`]  and the number of output prime numbers.
 
 ```
-> sieve_of_eratosthenes.exe 10
+> sieve_of_eratosthenes.exe <upper_limit>
 ```
 
-A following command write prime numbers  in the range of [0, 10]  to `primes.txt`. 
+A following command write prime numbers  in the range of [0, `upper_limit`]  to <`output_file`>. 
 
 ```
-> sieve_of_eratosthenes.exe 10 primes.txt
+> sieve_of_eratosthenes.exe <upper_limit> <output_file>
 ```
+
+When getting no prime number, it returns an array with the size 0. 
 
 Use `class_sieve_of_eratosthenes` module to use sieve_of_eratosthenes in your project.
 
