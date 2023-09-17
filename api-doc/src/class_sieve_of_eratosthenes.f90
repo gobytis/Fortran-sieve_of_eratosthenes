@@ -18,6 +18,7 @@ module class_sieve_of_eratosthenes
 
 
     !> 指定の自然数以下の素数を格納した int32 配列を返します。
+    !> 該当する素数が存在しない場合は大きさ 0 の配列を返します。
     function sieve(this, upper_limit) result(prime_number_array)
         ! 引数
         !> この手続きを実行するインスタンス (指定不要)
